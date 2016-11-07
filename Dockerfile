@@ -5,8 +5,7 @@ MAINTAINER Raphael Adam <raphael.adam@workiva.com, raphael912003@gmail.com>
 LABEL Description="This image contains the Selenium-HQ with Chrome and the Dart SDK"
 
 ENV CHANNEL stable
-# ENV SDK_VERSION latest
-ENV SDK_VERSION 1.17.1
+ENV SDK_VERSION latest
 ENV ARCHIVE_URL https://storage.googleapis.com/dart-archive/channels/$CHANNEL/release/$SDK_VERSION
 ENV PATH $PATH:/usr/lib/dart/bin
 
