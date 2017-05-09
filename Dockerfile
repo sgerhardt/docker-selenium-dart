@@ -3,7 +3,7 @@ FROM selenium/standalone-chrome-debug:3.0.1
 
 MAINTAINER Raphael Adam <raphael.adam@workiva.com, raphael912003@gmail.com>
 
-LABEL Description="This image contains: Selenium-HQ with Chrome; the Dart SDK; AWS CLI; and Sauce Connect"
+LABEL Description="This image contains: Selenium-HQ with Chrome; the Dart SDK; and Sauce Connect"
 
 ENV CHANNEL stable
 ENV SDK_VERSION latest
@@ -16,12 +16,7 @@ RUN apt-get update && apt-get install -y \
     ssh \
     unzip \
     wget \
-    python \
-    python-dev \
-    python-pip \
   && apt-get clean
-
-RUN pip install awscli boto3
 
 RUN wget -O ./sauce-connect.tar.gz https://saucelabs.com/downloads/sc-$SC_VERSION-linux.tar.gz \
   && tar -zxvf sauce-connect.tar.gz \
