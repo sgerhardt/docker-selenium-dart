@@ -28,3 +28,5 @@ RUN wget $ARCHIVE_URL/sdk/dartsdk-linux-x64-release.zip \
   && unzip dartsdk-linux-x64-release.zip \
   && cp dart-sdk/* /usr/local -r \
   && rm -rf dartsdk-linux-x64-release.zip
+
+CMD["xvfb-run", "java", "-jar", "/opt/selenium/selenium-server-standalone.jar"]
