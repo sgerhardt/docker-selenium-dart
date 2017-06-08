@@ -1,7 +1,7 @@
 
-FROM selenium/standalone-chrome-debug:3.0.1
+FROM selenium/standalone-chrome-debug:3.4.0
 
-MAINTAINER Raphael Adam <raphael.adam@workiva.com, raphael912003@gmail.com>
+MAINTAINER Sean Gerhardt <sean.gerhardt@workiva.com>
 
 LABEL Description="This image contains: Selenium-HQ with Chrome; the Dart SDK; and Sauce Connect"
 
